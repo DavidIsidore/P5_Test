@@ -24,7 +24,7 @@ fetch("http://localhost:3000/api/products")
     
 for(products of products){
     const lien = document.createElement("a");
-    lien.setAttribute("href","./products.html?id=" + `${products._id}`);
+    lien.setAttribute("href","./product.html?id=" + `${products._id}`);
     lien.classList.add("lien");
     let ajout = document.getElementById("items");
     ajout.appendChild(lien);
@@ -38,7 +38,6 @@ for(products of products){
     
     const img = document.createElement("img");
     img.setAttribute("src",`${products.imageUrl}`);
-    //return ${products.imageURL};
     img.setAttribute("alt",`${products.altTxt}`);
     article.appendChild(img);
     
@@ -54,6 +53,7 @@ for(products of products){
     content3.innerHTML = `${products.description}`;
     article.appendChild(content3);
 
+    
     
     
 
