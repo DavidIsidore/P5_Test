@@ -28,6 +28,12 @@ for(products of products){
     lien.classList.add("lien");
     let ajout = document.getElementById("items");
     ajout.appendChild(lien);
+    //console.log(lien);
+    var url = new URL(lien);
+    var id = url.searchParams.get("id");
+    console.log("id de l'adresse: " +id);
+    console.log("id de la page: " + window.location.href);
+
 
     
 
